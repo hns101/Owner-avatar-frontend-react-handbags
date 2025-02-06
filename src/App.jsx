@@ -5,6 +5,9 @@ import bag2 from "./assets/bag_2.png";
 import bag3 from "./assets/bag_3.png";
 import bag4 from "./assets/bag_4.png";
 import Product from "./compoments/product/Product.jsx";
+import brandphoto from "./assets/brand.png"
+import ourstortyphoto from "./assets/our_story.png"
+import Tile from "./compoments/Tile/Tile.jsx";
 
 function App() {
   return (<>
@@ -24,6 +27,23 @@ function App() {
           <Product name="The trendy bag" price={150} img={bag4}
                    bestSeller={false} newCollection={false}/>
       </main>
+      <footer>
+          <Tile title={"THE BRAND"}
+                text={" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium adipisci animi\n" +
+                    "                  assumenda beatae debitis deserunt eaque earum eligendi, eos esse fuga magnam mollitia nam,\n" +
+                    "                  officiis pariatur porro possimus quae quis quisquam quod recusandae temporibus vel voluptas\n" +
+                    "                  voluptatibus!\n" +
+                    "                  Adipisci aut distinctio dolore error ex id reprehenderit sed sequi ullam voluptates."} />
+          <Tile img={brandphoto} alt={"THE BRAND"} />
+          <Tile img={ourstortyphoto} alt={"Our Story"} />
+          <Tile title={"OUR STORY"}
+                text={" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium adipisci animi\n" +
+                    "                  assumenda beatae debitis deserunt eaque earum eligendi, eos esse fuga magnam mollitia nam,\n" +
+                    "                  officiis pariatur porro possimus quae quis quisquam quod recusandae temporibus vel voluptas\n" +
+                    "                  voluptatibus!\n" +
+                    "                  Adipisci aut distinctio dolore error ex id reprehenderit sed sequi ullam voluptates."} />
+
+      </footer>
   </>)
 }
 
